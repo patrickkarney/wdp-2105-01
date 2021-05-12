@@ -36,7 +36,9 @@
     .buttons {
       display: flex;
       justify-content: space-between;
+      visibility: hidden;
     }
+    
   }
 
   .content {
@@ -79,5 +81,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  &:hover .buttons {
+      visibility: visible;
+  }
+  &:hover .price .priceBtn{
+    background-color: $primary;
   }
 }
