@@ -7,15 +7,20 @@
 
   .photo {
     position: relative;
-    padding: 80% 10px 0 10px;
     background: {
       color: $productbox-photo-bg;
-      size: contain;
+      size: cover;
       position: center;
       repeat: no-repeat;
     }
     overflow: hidden;
     align-items: flex-end;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
     .sale {
       position: absolute;
