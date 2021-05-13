@@ -1,5 +1,21 @@
 @import "../../../styles/settings.scss";
 
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+@mixin mobile {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+
 .root {
   box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
   background-color: $menubar-bg;
@@ -11,6 +27,11 @@
   .menu {
     display: flex;
     align-self: stretch;
+
+    @include desktop {
+      order: -1;
+      padding: 10px;
+    }
 
     ul {
       margin: 0;
@@ -49,3 +70,5 @@
     }
   }
 }
+
+
