@@ -53,6 +53,9 @@ const ProductBox = ({ name, price, promo, stars, image }) => (
         </Button>
       </div>
     </div>
+    <div className={styles.price_old}>
+      Old price:<span> $ 60</span>
+    </div>
   </div>
 );
 
