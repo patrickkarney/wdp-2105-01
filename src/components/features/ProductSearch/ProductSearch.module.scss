@@ -25,6 +25,55 @@
       z-index: 0;
     }
 
+    ul {
+      position: relative;
+      padding: 10px 30px 10px 35px;
+      outline: none;
+      font-size: 14px;
+      margin: 0;
+      z-index: 1;
+
+      &:hover {
+        background-color: $primary;
+        color: white;
+      }
+
+      &:hover ul {
+        position: absolute;
+        display: block;
+        color: $text-color;
+        background-color: $hover-text-color;
+        border: solid 1px $form-border-color;
+        text-align: center;
+        width: 188px;
+        height: 180px;
+        top: 0;
+        right: 0;
+        margin-top: 42px;
+      }
+
+      li {
+        display: block;
+        user-select: none;
+      }
+
+      ul {
+        display: none;
+        padding: 0;
+        padding-top: 10px;
+
+        li {
+          padding: 5px 0;
+
+          &:hover {
+            color:$hover-text-color;
+            background-color: $primary;
+          }
+        }
+      }
+    }
+
+
     select {
       -webkit-appearance: none;
       border: 0;
@@ -33,6 +82,12 @@
       position: relative;
       z-index: 1;
     }
+  }
+
+  .selectField {
+    display: flex;
+    align-items: center;
+    position: relative;
   }
 
   .searchField {
