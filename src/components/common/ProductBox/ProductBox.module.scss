@@ -38,7 +38,7 @@
       justify-content: space-between;
       visibility: hidden;
     }
-    
+
   }
 
   .content {
@@ -81,6 +81,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .outlines .selected{
+    background-color: $primary;
+    border-color: white;
+    color: white;
+  }
+ .outlines .state:hover{
+    background-color: $primary;
+    border-color: $primary;
   }
   &:hover .buttons {
       visibility: visible;
