@@ -250,6 +250,7 @@ const initialState = {
   ],
   cart: {
     products: [],
+    favorites: ['aenean-ru-bristique-2'],
   },
 };
 
